@@ -2,6 +2,10 @@ from django.conf import settings
 from guardian.shortcuts import get_anonymous_user
 from rest_framework.authentication import BasicAuthentication
 from OWS.auth import AuthForbiddenRequest
+from django.contrib.auth import authenticate
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class QdjangoProjectAuthorizer(object):
@@ -15,7 +19,7 @@ class QdjangoProjectAuthorizer(object):
         # check for caching token
         if 'caching' in settings.G3WADMIN_LOCAL_MORE_APPS and 'g3wsuite_caching_token' in self.request.GET and \
                 settings.TILESTACHE_CACHE_TOKEN == self.request.GET['g3wsuite_caching_token']:
-                    return True
+            return True
 
         if self.request.user.has_perm('qdjango.view_project', self.project) or\
                 get_anonymous_user().has_perm('qdjango.view_project', self.project):
@@ -27,7 +31,16 @@ class QdjangoProjectAuthorizer(object):
                 user, other = ba.authenticate(self.request)
                 return user.has_perm('qdjango.view_project', self.project)
             except Exception as e:
-                print(e)
+                # Try header Authorization tokens
+                if 'Authorization' in self.request.headers:
+                    try:
+                        user = authenticate(self.request,
+                                            authorization=self.request.headers['Authorization'])
+                        return user.has_perm('qdjango.view_project', self.project)
+                    except Exception as ae:
+                        logger.debug(ae)
+
+                logger.debug(e)
                 pass
 
             raise AuthForbiddenRequest()
