@@ -319,7 +319,7 @@ msgstr "Widgets do módulo"
 
 #: templates/login.html:21
 msgid "Sign in to start your session"
-msgstr "teFaça login para iniciar sua sessãoste"
+msgstr "Faça login para iniciar sua sessão"
 
 #: templates/login.html:25 templates/registration/password_reset_form.html:24
 msgid "LOGIN ERROR"

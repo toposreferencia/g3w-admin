@@ -14,34 +14,34 @@ from modeltranslation.translator import register, TranslationOptions
 from .models import GeneralSuiteData, Group, MacroGroup
 
 
-@register(GeneralSuiteData)
-class GeneralSuiteDataTranslationOptions(TranslationOptions):
-    """ GeneralSuiteData model translation """
-    fields = (
-        'title',
-        'sub_title',
-        'home_description',
-        'about_title',
-        'about_description',
-        'about_name',
-        'groups_title',
-        'groups_map_description',
-        'login_title',
-        'login_description',
-        'credits',
-        'main_map_title',
-    )
-
-
-@register(Group)
-class GroupTranslationOptions(TranslationOptions):
-    """ Map Group model translation """
-    fields = (
-        'title',
-        'description',
-        'header_terms_of_use_text'
-    )
-
+# @register(GeneralSuiteData)
+# class GeneralSuiteDataTranslationOptions(TranslationOptions):
+#     """ GeneralSuiteData model translation """
+#     fields = (
+#         'title',
+#         'sub_title',
+#         'home_description',
+#         'about_title',
+#         'about_description',
+#         'about_name',
+#         'groups_title',
+#         'groups_map_description',
+#         'login_title',
+#         'login_description',
+#         'credits',
+#         'main_map_title',
+#     )
+#
+#
+# @register(Group)
+# class GroupTranslationOptions(TranslationOptions):
+#     """ Map Group model translation """
+#     fields = (
+#         'title',
+#         'description',
+#         'header_terms_of_use_text'
+#     )
+#
 
 @register(MacroGroup)
 class MacroGroupTranslationOptions(TranslationOptions):
