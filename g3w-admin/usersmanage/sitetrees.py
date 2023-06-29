@@ -115,6 +115,60 @@ sitetrees = (
                ),
           ]
      ),
+     # ENGLISH
+     G3Wtree(
+          'acl_pt-br',
+          title='ACL',
+          module='usermanage',
+          items=[
+               item(
+                    'ACL',
+                    '#',
+                    type_header=True
+               ),
+               item(
+                    'Usuários',
+                    '#',
+                    icon_css_class='fa fa-users',
+                    children=[
+                         item(
+                              'Adicionar usuário',
+                              'user-add',
+                              url_as_pattern=True,
+                              icon_css_class='fa fa-user-plus',
+                              access_by_perms=['auth.add_user']
+                         ),
+                         item(
+                              'Lista de usuários',
+                              'user-list',
+                              url_as_pattern=True,
+                              icon_css_class='fa fa-users'
+                         ),
+                         item(
+                              'Atualização do usuário',
+                              'user-update object.pk',
+                              url_as_pattern=True,
+                              icon_css_class='fa fa-edit',
+                              in_menu=False
+                         ),
+                         item(
+                              'Adicionar usuários do grupo',
+                              'user-group-add',
+                              url_as_pattern=True,
+                              icon_css_class='fa fa-plus',
+                              access_by_perms=['auth.add_user']
+                         ),
+                         item(
+                              'Lista de usuários de grupos',
+                              'user-group-list',
+                              url_as_pattern=True,
+                              icon_css_class='fa fa-list',
+                              access_by_perms=['auth.add_user']
+                         )
+                    ]
+               ),
+          ]
+     ),
 
      # FRENCH
      G3Wtree(

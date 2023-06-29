@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-27 11:17-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: usersmanage/forms.py:96
+msgid "Editor1 user"
+msgstr "Usuário do Editor1"
+
+#: usersmanage/forms.py:97
+msgid "Set Editor Level 1 owner"
+msgstr "Definir proprietário do nível 1 do editor"
+
+#: usersmanage/forms.py:100
+msgid "Editor2 user"
+msgstr "Usuário do Editor2"
+
+#: usersmanage/forms.py:103
+msgid "Viewer users"
+msgstr "Usuários visualizadores"
+
+#: usersmanage/forms.py:110
+msgid "Editor user groups"
+msgstr "Grupos de usuários do editor"
+
+#: usersmanage/forms.py:117
+msgid "Viewer user groups"
+msgstr "Grupos de usuários visualizadores"
+
+#: usersmanage/forms.py:123
+msgid "Propagate <b>NEW</b> viewers and new viewers user groups permissions"
+msgstr "Propagar <b>NOVOS</b> visualizadores e novas permissões de grupos de usuários de visualizadores"
+
+#: usersmanage/forms.py:294
+msgid "Select roles for this user"
+msgstr "Selecione funções para este usuário"
+
+#: usersmanage/forms.py:295
+msgid "Main roles"
+msgstr "Funções principais"
+
+#: usersmanage/forms.py:302
+msgid ""
+"Select <b>EDITOR groups</b> for this user, only Editor Level 2 can be added"
+msgstr "Selecione <b>Grupos de EDITOR</b> para este usuário, somente Editor Nível 2 pode ser adicionado"
+
+#: usersmanage/forms.py:303
+msgid "User editor groups"
+msgstr "Grupos de editores de usuários"
+
+#: usersmanage/forms.py:310
+msgid ""
+"Select <b>VIEWER groups</b> for this user, only Viewer Level 1 can be added"
+msgstr "Selecione <b>grupos de VISUALIZADORES</b> para este usuário, apenas o nível 1 do visualizador pode ser adicionado"
+
+#: usersmanage/forms.py:311
+msgid "User viewer groups"
+msgstr "Grupos de visualizadores de usuários"
+
+#: usersmanage/forms.py:351
+msgid "Anagraphic"
+msgstr "Anagráfico"
+
+#: usersmanage/forms.py:370
+msgid "ACL/Roles"
+msgstr "ACL/Funções"
+
+#: usersmanage/forms.py:389
+msgid "Login data"
+msgstr "dados de login"
+
+#: usersmanage/forms.py:407
+msgid "User data"
+msgstr "Dados do usuário"
+
+#: usersmanage/forms.py:435
+msgid "User backend"
+msgstr "Back-end do usuário"
+
+#: usersmanage/forms.py:606
+msgid "User can't be Editor level 1 and at same time Editor level 2"
+msgstr "O usuário não pode ser Editor nível 1 e ao mesmo tempo Editor nível 2"
+
+#: usersmanage/forms.py:620
+msgid "User can't belong a **editor groups** if he isn't a Editor level 2"
+msgstr "O usuário não pode pertencer a um **grupo de editores** se não for um Editor nível 2"
+
+#: usersmanage/forms.py:634
+msgid "User can't belong a **viewer groups** if he isn't a Viewer level 1"
+msgstr "O usuário não pode pertencer a um **grupo de visualizadores** se não for um visualizador nível 1"
+
+#: usersmanage/forms.py:652
+msgid "Avatar is no a valid image"
+msgstr "O avatar não é uma imagem válida"
+
+#: usersmanage/forms.py:680
+msgid "Password"
+msgstr "Senha"
+
+#: usersmanage/forms.py:682
+msgid "Password confirmation"
+msgstr "Confirmação de senha"
+
+#: usersmanage/forms.py:684
+msgid "Enter the same password as above, for verification."
+msgstr "Digite a mesma senha acima, para verificação."
+
+#: usersmanage/forms.py:710
+#: usersmanage/templates/usersmanage/user_group_list.html:29
+msgid "Role"
+msgstr "Papel"
+
+#: usersmanage/forms.py:724
+#: usersmanage/templates/usersmanage/ajax/user_group_detail.html:5
+msgid "Group"
+msgstr "Grupo"
+
+#: usersmanage/models.py:21
+msgid "Avatar"
+msgstr "Avatar"
+
+#: usersmanage/models.py:53
+msgid "Group role"
+msgstr "Papel do grupo"
+
+#: usersmanage/templates/usersmanage/ajax/user_detail.html:5
+#: usersmanage/templates/usersmanage/user_list.html:20
+msgid "User"
+msgstr "Usuário"
+
+#: usersmanage/templates/usersmanage/user_form.html:85
+msgid "System users"
+msgstr "Usuários do sistema"
+
+#: usersmanage/templates/usersmanage/user_form.html:96
+#: usersmanage/templates/usersmanage/user_group_form.html:20
+msgid "Alert"
+msgstr "Alerta"
+
+#: usersmanage/templates/usersmanage/user_form.html:97
+#: usersmanage/templates/usersmanage/user_group_form.html:21
+msgid "Some errors on form. Check it and send again."
+msgstr "Alguns erros no formulário. Confira e envie novamente."
+
+#: usersmanage/templates/usersmanage/user_group_form.html:9
+msgid "System user groups"
+msgstr "Grupos de usuários do sistema"
+
+#: usersmanage/templates/usersmanage/user_group_list.html:10
+#: usersmanage/templates/usersmanage/user_list.html:31
+msgid "User groups"
+msgstr "Grupos de usuários"
+
+#: usersmanage/templates/usersmanage/user_group_list.html:20
+msgid "User group"
+msgstr "Grupo de usuários"
+
+#: usersmanage/templates/usersmanage/user_group_list.html:27
+#: usersmanage/templates/usersmanage/user_list.html:27
+msgid "Actions"
+msgstr "Ações"
+
+#: usersmanage/templates/usersmanage/user_group_list.html:28
+msgid "Name"
+msgstr "Nome"
+
+#: usersmanage/templates/usersmanage/user_group_list.html:30
+#: usersmanage/templates/usersmanage/user_list.html:10
+msgid "Users"
+msgstr "Usuários"
+
+#: usersmanage/templates/usersmanage/user_group_list.html:31
+#: usersmanage/templates/usersmanage/user_list.html:44
+msgid "Created"
+msgstr "Criada"
+
+#: usersmanage/templates/usersmanage/user_group_list.html:39
+#: usersmanage/templates/usersmanage/user_list.html:57
+msgid "Show detail"
+msgstr "Mostrar detalhes"
+
+#: usersmanage/templates/usersmanage/user_group_list.html:43
+#: usersmanage/templates/usersmanage/user_list.html:62
+msgid "Edit"
+msgstr "Editar"
+
+#: usersmanage/templates/usersmanage/user_group_list.html:48
+#: usersmanage/templates/usersmanage/user_list.html:67
+msgid "Delete"
+msgstr "Excluir"
+
+#: usersmanage/templates/usersmanage/user_list.html:28
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: usersmanage/templates/usersmanage/user_list.html:30
+msgid "Roles"
+msgstr "Papéis"
+
+#: usersmanage/templates/usersmanage/user_list.html:33
+msgid " Macro groups"
+msgstr "Grupos de macros"
+
+#: usersmanage/templates/usersmanage/user_list.html:38
+msgid "Superuser"
+msgstr "Superusuário"
+
+#: usersmanage/templates/usersmanage/user_list.html:39
+msgid "Staff"
+msgstr "Funcionários"
+
+#: usersmanage/templates/usersmanage/user_list.html:42
+msgid "First name"
+msgstr "Primeiro nome"
+
+#: usersmanage/templates/usersmanage/user_list.html:43
+msgid "Last name"
+msgstr "Sobrenome"
+
+#: usersmanage/templates/usersmanage/user_list.html:46
+msgid "Backend"
+msgstr "Backend"
+
+#: usersmanage/utils.py:231
+msgid "ACL Users"
+msgstr "Usuários ACL"
+
+#: usersmanage/views.py:228
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "Nenhum %(verbose_name)s encontrado correspondente à consulta"

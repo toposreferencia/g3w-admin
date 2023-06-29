@@ -46,6 +46,25 @@ sitetrees = (
         ]
     ),
 
+    G3Wtree(
+        'filemanager_sidebar_right_pt-br',
+        title='STRESS navabar',
+        module='filemanager',
+        items=[
+            item(
+                'GERENCIADOR DE ARQUIVOS',
+                '#',
+                type_header=True
+            ),
+            item(
+                'Arquivos',
+                'filemanager-home',
+                icon_css_class='fa fa-database',
+                description='Vá para o aplicativo gerenciador de arquivos...'
+            ),
+        ]
+    ),
+
     # FRENCH
     G3Wtree(
         'filemanager_sidebar_right_fr',
@@ -86,4 +105,3 @@ sitetrees = (
         ]
     ),
 )
-

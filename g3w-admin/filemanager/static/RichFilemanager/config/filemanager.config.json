@@ -24,8 +24,8 @@
         ]
     },
     "language": {
-        "default": "it",
-        "available": ["it", "en"]
+        "default": "en",
+        "available": ["en", "pt-br"]
     },
     "formatter": {
         "datetime": {

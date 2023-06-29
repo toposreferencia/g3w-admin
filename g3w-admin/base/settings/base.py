@@ -180,7 +180,7 @@ LOGIN_REDIRECT_URL = '/'
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'it-it'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -197,16 +197,17 @@ LOCALE_PATHS = (
 
 gettext = lambda s: s
 LANGUAGES = (
-    ('it', 'Italian'),
+    # ('it', 'Italian'),
     ('en', 'English'),
-    ('fr', 'French'),
-    ('fi', 'Finnish'),
-    ('se', 'Swedish'), # FIXME: correct language code should be "sv"
-    ('ro', 'Romanian'),
-    ('de', 'Deutsch'),
+    ('pt-br', 'Portugues'),
+    # ('fr', 'French'),
+    # ('fi', 'Finnish'),
+    # ('se', 'Swedish'), # FIXME: correct language code should be "sv"
+    # ('ro', 'Romanian'),
+    # ('de', 'Deutsch'),
 )
-
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'it'
+STATIC_ROOT = 'static'
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
 # if prefix for default language put in to url
 PREFIX_DEFAULT_LANGUAGE = True

@@ -96,273 +96,272 @@ sitetrees = (
           ]
      ),
 
-     # ENGLISH
-     G3Wtree(
-          'core_en',
-          title='Menu',
-          module='core',
-          items=[
-               item(
-                    'MENU',
-                    '#',
-                    type_header=True
-               ),
-               item(
-                    'Dashboard',
-                    'home',
-                    url_as_pattern=True,
-                    icon_css_class='fa fa-dashboard'
-               ),
-               item(
-                    'Cartographic groups',
-                    'group-list',
-                    icon_css_class='fa fa-globe',
-                    children=[
-                         item(
-                              'Add group',
-                              'group-add',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-plus',
-                              access_by_perms=['core.add_group']
-                         ),
-                         item(
-                              'Groups list',
-                              'group-list',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-globe',
-                              alias='group-list',
-                              in_breadcrumbs=False
-                         ),
-                         item(
-                              'Trash',
-                              'group-deactive-list',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-trash',
-                              alias='group-deactive-list',
-                              in_breadcrumbs=True
-                         ),
-                         item(
-                              'Groups update {{ object.title}}',
-                              'group-update object.slug',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-edit',
-                              in_menu=False,
-                              alias='group-update'
-                         ),
-                         item(
-                              'Projects list {{ group.name }}',
-                              'project-list group.slug',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-list',
-                              in_menu=False,
-                              in_breadcrumbs=True,
-                              alias='project-list'
-                         )
-                    ]
-               ),
-               item(
-                    'Macro Cartographic groups',
-                    'macrogroup-list',
-                    access_by_perms=['core.add_macrogroup'],
-                    icon_css_class='fa fa-globe',
-                    children=[
-                         item(
-                              'Add MACRO group',
-                              'macrogroup-add',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-plus',
-                              access_by_perms=['core.add_macrogroup']
-                         ),
-                         item(
-                              'MACRO groups list',
-                              'macrogroup-list',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-globe',
-                              alias='macrogroup-list',
-                              in_breadcrumbs=True
-                         ),
-                    ]
-               ),
-          ]
-     ),
+    G3Wtree(
+        'core_pt-br',
+        title='Menu',
+        module='core',
+        items=[
+            item(
+                'MENU',
+                '#',
+                type_header=True
+            ),
+            item(
+                'Dashboard',
+                'home',
+                url_as_pattern=True,
+                icon_css_class='fa fa-dashboard'
+            ),
+            item(
+                'Grupos cartográficos',
+                'group-list',
+                icon_css_class='fa fa-globe',
+                children=[
+                    item(
+                        'Adicionar grupo',
+                        'group-add',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-plus',
+                        access_by_perms=['core.add_group']
+                    ),
+                    item(
+                        'Lista de grupos',
+                        'group-list',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-globe',
+                        alias='group-list',
+                        in_breadcrumbs=False
+                    ),
+                    item(
+                        'Lixo',
+                        'group-deactive-list',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-trash',
+                        alias='group-deactive-list',
+                        in_breadcrumbs=True
+                    ),
+                    item(
+                        'Atualização de grupos {{ object.title}}',
+                        'group-update object.slug',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-edit',
+                        in_menu=False,
+                        alias='group-update'
+                    ),
+                    item(
+                        'Lista de projetos {{ group.name }}',
+                        'project-list group.slug',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-list',
+                        in_menu=False,
+                        in_breadcrumbs=True,
+                        alias='project-list'
+                    )
+                ]
+            ),
+            item(
+                'Grupos MACRO cartográficos',
+                'macrogroup-list',
+                access_by_perms=['core.add_macrogroup'],
+                icon_css_class='fa fa-globe',
+                children=[
+                    item(
+                        'Adicionar grupo MACRO',
+                        'macrogroup-add',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-plus',
+                        access_by_perms=['core.add_macrogroup']
+                    ),
+                    item(
+                        'Lista de grupos MACRO',
+                        'macrogroup-list',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-globe',
+                        alias='macrogroup-list',
+                        in_breadcrumbs=True
+                    ),
+                ]
+            ),
+        ]
+    ),
 
-     # FRENCH
-     G3Wtree(
-          'core_fr',
-          title='Menu',
-          module='core',
-          items=[
-               item(
-                    'MENU',
-                    '#',
-                    type_header=True
-               ),
-               item(
-                    'Bureau',
-                    'home',
-                    url_as_pattern=True,
-                    icon_css_class='fa fa-dashboard'
-               ),
-               item(
-                    'Groupes cartographiques',
-                    'group-list',
-                    icon_css_class='fa fa-globe',
-                    children=[
-                         item(
-                              'Ajouter un groupe',
-                              'group-add',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-plus',
-                              access_by_perms=['core.add_group']
-                         ),
-                         item(
-                              'Liste des groupes',
-                              'group-list',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-globe',
-                              alias='group-list',
-                              in_breadcrumbs=False
-                         ),
-                         item(
-                              'Pouble',
-                              'group-deactive-list',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-trash',
-                              alias='group-deactive-list',
-                              in_breadcrumbs=True
-                         ),
-                         item(
-                              'Mise à jour du groupe {{ object.title}}',
-                              'group-update object.slug',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-edit',
-                              in_menu=False,
-                              alias='group-update'
-                         ),
-                         item(
-                              'Liste des projets {{ group.name }}',
-                              'project-list group.slug',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-list',
-                              in_menu=False,
-                              in_breadcrumbs=True,
-                              alias='project-list'
-                         )
-                    ]
-               ),
-               item(
-                    'Groupes macro-cartographiques',
-                    'macrogroup-list',
-                    access_by_perms=['core.add_macrogroup'],
-                    icon_css_class='fa fa-globe',
-                    children=[
-                         item(
-                              'Ajouter un groupe MACRO',
-                              'macrogroup-add',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-plus',
-                              access_by_perms=['core.add_macrogroup']
-                         ),
-                         item(
-                              'Liste des groupes MACRO',
-                              'macrogroup-list',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-globe',
-                              alias='macrogroup-list',
-                              in_breadcrumbs=True
-                         ),
-                    ]
-               ),
-          ]
-     ),
+    # FRENCH
+    G3Wtree(
+        'core_fr',
+        title='Menu',
+        module='core',
+        items=[
+            item(
+                'MENU',
+                '#',
+                type_header=True
+            ),
+            item(
+                'Bureau',
+                'home',
+                url_as_pattern=True,
+                icon_css_class='fa fa-dashboard'
+            ),
+            item(
+                'Groupes cartographiques',
+                'group-list',
+                icon_css_class='fa fa-globe',
+                children=[
+                    item(
+                        'Ajouter un groupe',
+                        'group-add',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-plus',
+                        access_by_perms=['core.add_group']
+                    ),
+                    item(
+                        'Liste des groupes',
+                        'group-list',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-globe',
+                        alias='group-list',
+                        in_breadcrumbs=False
+                    ),
+                    item(
+                        'Pouble',
+                        'group-deactive-list',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-trash',
+                        alias='group-deactive-list',
+                        in_breadcrumbs=True
+                    ),
+                    item(
+                        'Mise à jour du groupe {{ object.title}}',
+                        'group-update object.slug',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-edit',
+                        in_menu=False,
+                        alias='group-update'
+                    ),
+                    item(
+                        'Liste des projets {{ group.name }}',
+                        'project-list group.slug',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-list',
+                        in_menu=False,
+                        in_breadcrumbs=True,
+                        alias='project-list'
+                    )
+                ]
+            ),
+            item(
+                'Groupes macro-cartographiques',
+                'macrogroup-list',
+                access_by_perms=['core.add_macrogroup'],
+                icon_css_class='fa fa-globe',
+                children=[
+                    item(
+                        'Ajouter un groupe MACRO',
+                        'macrogroup-add',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-plus',
+                        access_by_perms=['core.add_macrogroup']
+                    ),
+                    item(
+                        'Liste des groupes MACRO',
+                        'macrogroup-list',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-globe',
+                        alias='macrogroup-list',
+                        in_breadcrumbs=True
+                    ),
+                ]
+            ),
+        ]
+    ),
 
-     # ROMANIAN
-     G3Wtree(
-          'core_ro',
-          title='Menu',
-          module='core',
-          items=[
-               item(
-                    'MENU',
-                    '#',
-                    type_header=True
-               ),
-               item(
-                    'Tablou de bord',
-                    'home',
-                    url_as_pattern=True,
-                    icon_css_class='fa fa-dashboard'
-               ),
-               item(
-                    'Grupuri cartografice',
-                    'group-list',
-                    icon_css_class='fa fa-globe',
-                    children=[
-                         item(
-                              'Adaugă grup',
-                              'group-add',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-plus',
-                              access_by_perms=['core.add_group']
-                         ),
-                         item(
-                              'Listă grupuri',
-                              'group-list',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-globe',
-                              alias='group-list',
-                              in_breadcrumbs=False
-                         ),
-                         item(
-                              'Coș de gunoi',
-                              'group-deactive-list',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-trash',
-                              alias='group-deactive-list',
-                              in_breadcrumbs=True
-                         ),
-                         item(
-                              'Groups update {{ object.title}}',
-                              'group-update object.slug',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-edit',
-                              in_menu=False,
-                              alias='group-update'
-                         ),
-                         item(
-                              'Lista proiecte {{ group.name }}',
-                              'project-list group.slug',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-list',
-                              in_menu=False,
-                              in_breadcrumbs=True,
-                              alias='project-list'
-                         )
-                    ]
-               ),
-               item(
-                    'Grupuri MACRO Cartografice',
-                    'macrogroup-list',
-                    access_by_perms=['core.add_macrogroup'],
-                    icon_css_class='fa fa-globe',
-                    children=[
-                         item(
-                              'Adaugă grup MACRO',
-                              'macrogroup-add',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-plus',
-                              access_by_perms=['core.add_macrogroup']
-                         ),
-                         item(
-                              'Lista grupuri MACRO',
-                              'macrogroup-list',
-                              url_as_pattern=True,
-                              icon_css_class='fa fa-globe',
-                              alias='macrogroup-list',
-                              in_breadcrumbs=True
-                         ),
-                    ]
-               ),
-          ]
-     )
+    # ROMANIAN
+    G3Wtree(
+        'core_ro',
+        title='Menu',
+        module='core',
+        items=[
+            item(
+                'MENU',
+                '#',
+                type_header=True
+            ),
+            item(
+                'Tablou de bord',
+                'home',
+                url_as_pattern=True,
+                icon_css_class='fa fa-dashboard'
+            ),
+            item(
+                'Grupuri cartografice',
+                'group-list',
+                icon_css_class='fa fa-globe',
+                children=[
+                    item(
+                        'Adaugă grup',
+                        'group-add',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-plus',
+                        access_by_perms=['core.add_group']
+                    ),
+                    item(
+                        'Listă grupuri',
+                        'group-list',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-globe',
+                        alias='group-list',
+                        in_breadcrumbs=False
+                    ),
+                    item(
+                        'Coș de gunoi',
+                        'group-deactive-list',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-trash',
+                        alias='group-deactive-list',
+                        in_breadcrumbs=True
+                    ),
+                    item(
+                        'Groups update {{ object.title}}',
+                        'group-update object.slug',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-edit',
+                        in_menu=False,
+                        alias='group-update'
+                    ),
+                    item(
+                        'Lista proiecte {{ group.name }}',
+                        'project-list group.slug',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-list',
+                        in_menu=False,
+                        in_breadcrumbs=True,
+                        alias='project-list'
+                    )
+                ]
+            ),
+            item(
+                'Grupuri MACRO Cartografice',
+                'macrogroup-list',
+                access_by_perms=['core.add_macrogroup'],
+                icon_css_class='fa fa-globe',
+                children=[
+                    item(
+                        'Adaugă grup MACRO',
+                        'macrogroup-add',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-plus',
+                        access_by_perms=['core.add_macrogroup']
+                    ),
+                    item(
+                        'Lista grupuri MACRO',
+                        'macrogroup-list',
+                        url_as_pattern=True,
+                        icon_css_class='fa fa-globe',
+                        alias='macrogroup-list',
+                        in_breadcrumbs=True
+                    ),
+                ]
+            ),
+        ]
+    )
 )

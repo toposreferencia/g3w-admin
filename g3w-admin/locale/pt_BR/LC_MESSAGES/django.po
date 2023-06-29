@@ -1,0 +1,420 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-27 11:17-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: OWS/utils/data.py:125
+msgid "The GetFeatureResponse response is malformed: {}"
+msgstr "A resposta GetFeatureResponse está malformada: {}"
+
+#: openrouteservice/api/views.py:138
+msgid "Input layer is not a point or multipoint layer."
+msgstr "A camada de entrada não é uma camada de ponto ou multiponto."
+
+#: openrouteservice/api/views.py:156
+msgid "Missing \"qgis_layer_id\", \"new_layer_name\" or \"connection_id\"."
+msgstr "Falta \"qgis_layer_id\", \"new_layer_name\" ou \"connection_id\"."
+
+#: openrouteservice/api/views.py:171 openrouteservice/api/views.py:176
+msgid ""
+"Wrong color parameter, color must be a list of three integers (red, green, "
+"blue)."
+msgstr "Parâmetro de cor incorreto, a cor deve ser uma lista de três números inteiros (vermelho, verde, azul)"
+
+#: openrouteservice/api/views.py:182
+msgid ""
+"Missing tranparency parameter, because color was specified transparency is "
+"required."
+msgstr "Parâmetro de transparência ausente, porque a cor foi especificada, a transparência é necessária."
+
+#: openrouteservice/api/views.py:190
+msgid "Wrong tranparency parameter, transparency must be between 0 and 1."
+msgstr "Parâmetro de transparência incorreto, a transparência deve estar entre 0 e 1."
+
+#: openrouteservice/api/views.py:196
+msgid "Missing stroke_width from style definition."
+msgstr "Stroke_width ausente da definição de estilo."
+
+#: openrouteservice/api/views.py:212
+msgid "Layer is not compatible with ORS data."
+msgstr "A camada não é compatível com dados ORS."
+
+#: openrouteservice/api/views.py:225
+msgid "Wrong connection_id."
+msgstr "connection_id errado."
+
+#: openrouteservice/api/views.py:229
+msgid "Either qgis_layer_id or connection_id + layer_name must have a value."
+msgstr "Tanto qgis_layer_id quanto connection_id + layer_name devem ter um valor."
+
+#: openrouteservice/api/views.py:236
+#, python-format
+msgid "Profile not found, available profiles: %s"
+msgstr "Perfil não encontrado, perfis disponíveis: %s"
+
+#: openrouteservice/api/views.py:246
+msgid "Missing \"locations\" array."
+msgstr "Matriz \"locations\" ausente."
+
+#: openrouteservice/api/views.py:250
+#, python-format
+msgid "Max allowed locations: %s"
+msgstr "Máximo de localizações permitidas: %s"
+
+#: openrouteservice/api/views.py:254
+msgid "Malformed locations array."
+msgstr "Matriz de locais malformados."
+
+#: openrouteservice/api/views.py:259
+msgid "Missing \"range\" array."
+msgstr "Matriz \"intervalo\" ausente."
+
+#: openrouteservice/api/views.py:263
+#, python-format
+msgid "Max allowed ranges: %s"
+msgstr "Intervalos máximos permitidos: %s"
+
+#: openrouteservice/api/views.py:271
+msgid "Malformed range array."
+msgstr "Matriz de intervalo malformada."
+
+#: openrouteservice/api/views.py:398
+msgid "Task not found!"
+msgstr "Tarefa não encontrada!"
+
+#: openrouteservice/forms.py:41
+#: openrouteservice/templates/openrouteservice/openrouteserviceproject_list.html:19
+#: openrouteservice/templates/openrouteservice/openrouteserviceproject_list.html:27
+msgid "Project"
+msgstr "Projeto"
+
+#: openrouteservice/models.py:38
+msgid "Isochrones"
+msgstr "Isócronos"
+
+#: openrouteservice/templates/openrouteservice/openrouteserviceproject_form.html:13
+msgid "Openrouteservice Project"
+msgstr "Projeto Openrouteservice"
+
+#: openrouteservice/templates/openrouteservice/openrouteserviceproject_form.html:25
+msgid "Alert"
+msgstr "Alerta"
+
+#: openrouteservice/templates/openrouteservice/openrouteserviceproject_form.html:26
+msgid "Some errors on form. Check it and send again."
+msgstr "Alguns erros no formulário. Confira e envie novamente."
+
+#: openrouteservice/templates/openrouteservice/openrouteserviceproject_list.html:8
+msgid "Openrouteservice Projects"
+msgstr "Projetos Openrouteservice"
+
+#: openrouteservice/templates/openrouteservice/openrouteserviceproject_list.html:26
+msgid "Actions"
+msgstr "Ações"
+
+#: openrouteservice/templates/openrouteservice/openrouteserviceproject_list.html:28
+msgid "Services"
+msgstr "Serviços"
+
+#: openrouteservice/templates/openrouteservice/openrouteserviceproject_list.html:36
+msgid "Edit"
+msgstr "Editar"
+
+#: openrouteservice/templates/openrouteservice/openrouteserviceproject_list.html:39
+msgid "Delete"
+msgstr "Excluir"
+
+#: openrouteservice/utils.py:494
+msgid "Cannot create temporary layer for isochrone result."
+msgstr "Não é possível criar camada temporária para resultado isócrono."
+
+#: openrouteservice/utils.py:512
+msgid ""
+"Cannot save isochrone result to destination layer: layer already exists (use "
+"\"qgis_layer_id\" instead)!"
+msgstr ""
+"Não é possível salvar o resultado da isócrona na camada de destino: a camada já existe "
+"(em vez disso, use \"qgis_layer_id\")!"
+
+#: openrouteservice/utils.py:525
+msgid "Cannot save isochrone result to destination layer: "
+msgstr "Não é possível salvar o resultado isócrono na camada de destino:"
+
+#: openrouteservice/utils.py:553
+msgid "Wrong connection id."
+msgstr "Identificação de conexão incorreta."
+
+#: openrouteservice/utils.py:585
+msgid "Error creating destination layer connection."
+msgstr "Erro ao criar a conexão da camada de destino."
+
+#: openrouteservice/utils.py:592
+msgid "Error creating destination layer: "
+msgstr "Erro ao criar a camada de destino:"
+
+#: openrouteservice/utils.py:606
+msgid "Error creating destination layer: layer is not valid!"
+msgstr "Erro ao criar a camada de destino: a camada não é válida!"
+
+#: openrouteservice/utils.py:619
+msgid "Error saving the destination layer: could not write project!"
+msgstr "Erro ao salvar a camada de destino: não foi possível gravar o projeto!"
+
+#: openrouteservice/utils.py:643
+msgid "Error adding destination Layer to the project: layer already exists."
+msgstr "Erro ao adicionar camada de destino ao projeto: a camada já existe."
+
+#: openrouteservice/utils.py:653
+#, python-format
+msgid "Error opening destination layer %s: layer not found in QGIS project!"
+msgstr "Erro ao abrir a camada de destino %s: camada não encontrada no projeto QGIS!"
+
+#: openrouteservice/utils.py:670
+msgid "Error transforming geometry from 4326 to destination layer CRS."
+msgstr "Erro ao transformar a geometria de 4326 para a camada de destino CRS."
+
+#: openrouteservice/utils.py:674
+msgid "No compatible features returned from isochrone."
+msgstr "Nenhum recurso compatível retornou do isochrone."
+
+#: openrouteservice/utils.py:677
+msgid "Destination layer is not editable."
+msgstr "A camada de destino não é editável."
+
+#: openrouteservice/utils.py:681
+msgid "Error adding features to the destination layer."
+msgstr "Erro ao adicionar feições à camada de destino."
+
+#: openrouteservice/utils.py:685
+msgid "Error committing features to the destination layer."
+msgstr "Erro ao confirmar características para a camada de destino."
+
+#: openrouteservice/utils.py:793
+#, python-format
+msgid "Error generating isochrone: %s."
+msgstr "Erro ao gerar isócrona: %s."
+
+#: openrouteservice/utils.py:822
+msgid "Unknown error adding results to the destination layer."
+msgstr "Erro desconhecido ao adicionar resultados à camada de destino."
+
+#: templates/403.html:7
+msgid "error page"
+msgstr "página de erro"
+
+#: templates/403.html:15
+msgid "Access denied"
+msgstr "Acesso negado"
+
+#: templates/403.html:17
+msgid "You don't have grant to access this section"
+msgstr "Você não tem permissão para acessar esta seção"
+
+#: templates/404.html:11
+msgid "Oops! Page not found."
+msgstr "Ops! Página não encontrada."
+
+#: templates/404.html:13
+msgid "We could not find the page you were looking for."
+msgstr "Não foi possível encontrar a página que você estava procurando."
+
+#: templates/admin/base.html:7
+msgid "G3W-ADMIN"
+msgstr "G3W-ADMIN"
+
+#: templates/admin/base.html:12
+msgid "Documentation"
+msgstr "Documentação"
+
+#: templates/admin/base.html:16
+msgid "Change password"
+msgstr "Alterar a senha"
+
+#: templates/admin/base.html:18
+msgid "Log out"
+msgstr "Sair"
+
+#: templates/base.html:189 templates/index.html:6
+msgid "Dashboard"
+msgstr "Painel"
+
+#: templates/base.html:228
+msgid "Version"
+msgstr "Versão"
+
+#: templates/include/navbar_right_menu.html:10
+msgid "Search"
+msgstr "Procurar"
+
+#: templates/include/navbar_right_menu.html:24
+msgid "Frontend"
+msgstr "Frontend"
+
+#: templates/include/navbar_right_menu.html:45
+msgid "Registered on"
+msgstr "Registrado em"
+
+#: templates/include/navbar_right_menu.html:46
+msgid "Last login"
+msgstr "Último login"
+
+#: templates/include/navbar_right_menu.html:53
+msgid "Profile"
+msgstr "Perfil"
+
+#: templates/include/navbar_right_menu.html:56
+msgid "Logout"
+msgstr "Sair"
+
+#: templates/include/sidebar_right.html:9
+msgid "Configurations"
+msgstr "Configurações"
+
+#: templates/include/sidebar_right.html:15
+msgid "Edit general data"
+msgstr "Editar dados gerais"
+
+#: templates/include/sidebar_right.html:16
+msgid "Frontend data and other"
+msgstr "Dados frontend e outros"
+
+#: templates/include/sidebar_right.html:25
+msgid "Django administration"
+msgstr "Administração do Django"
+
+#: templates/include/sidebar_right.html:26
+msgid "Go to staff administration section"
+msgstr "Ir para a seção de administração de pessoal"
+
+#: templates/index.html:7
+msgid "Current situation"
+msgstr "Situação atual"
+
+#: templates/index.html:19
+msgid "Groups"
+msgstr "Grupos"
+
+#: templates/index.html:26
+msgid "Show"
+msgstr "Mostrar"
+
+#: templates/index.html:32
+msgid "Module widgets"
+msgstr "Widgets do módulo"
+
+#: templates/login.html:21
+msgid "Sign in to start your session"
+msgstr "teFaça login para iniciar sua sessãoste"
+
+#: templates/login.html:25 templates/registration/password_reset_form.html:24
+msgid "LOGIN ERROR"
+msgstr "ERRO DE LOGIN"
+
+#: templates/login.html:26
+msgid "Username and/or password uncorrect"
+msgstr "Nome de usuário e/ou senha incorretos"
+
+#: templates/login.html:41
+msgid "Sign In"
+msgstr "Entrar"
+
+#: templates/login.html:47 templates/registration/password_reset_form.html:31
+msgid "Forgot your password?"
+msgstr "Esqueceu sua senha?"
+
+#: templates/login.html:53
+#: templates/registration/password_reset_complete.html:26
+#: templates/registration/password_reset_confirm.html:47
+#: templates/registration/password_reset_done.html:26
+#: templates/registration/password_reset_form.html:45
+msgid " Version"
+msgstr "Versão"
+
+#: templates/registration/password_reset_complete.html:22
+msgid "Password reset complete"
+msgstr "Redefinição de senha concluída"
+
+#: templates/registration/password_reset_complete.html:23
+msgid "Your new password has been set. You can log in now on the"
+msgstr "Sua nova senha foi definida. Você pode fazer login agora no"
+
+#: templates/registration/password_reset_complete.html:23
+msgid "log in page"
+msgstr "página de login"
+
+#: templates/registration/password_reset_confirm.html:22
+msgid "Enter new password"
+msgstr "Insira a nova senha"
+
+#: templates/registration/password_reset_confirm.html:29
+msgid "New password"
+msgstr "Nova Senha"
+
+#: templates/registration/password_reset_confirm.html:34
+msgid "Repeat password"
+msgstr "Repita a senha"
+
+#: templates/registration/password_reset_confirm.html:39
+msgid "Change my password"
+msgstr "Mudar minha senha"
+
+#: templates/registration/password_reset_confirm.html:44
+msgid ""
+"The password reset link <strong>was invalid</strong>, possibly because it "
+"has already been used.  Please request a new password reset."
+msgstr "O link de redefinição de senha <strong>era inválido</strong>, possivelmente porque já foi usado. Solicite uma nova redefinição de senha."
+
+#: templates/registration/password_reset_done.html:22
+msgid "Check your inbox."
+msgstr "Verifique sua caixa de entrada."
+
+#: templates/registration/password_reset_done.html:23
+msgid ""
+"We've emailed you instructions for setting your password. You should receive "
+"the email shortly!"
+msgstr "Enviamos um e-mail com instruções para definir sua senha. Você deve receber o e-mail em breve!"
+
+#: templates/registration/password_reset_form.html:25
+msgid "Email no present into database"
+msgstr "E-mail não presente no banco de dados"
+
+#: templates/registration/password_reset_form.html:32
+msgid ""
+"Enter your email address below, and we'll email instructions for setting a "
+"new one."
+msgstr "Digite seu endereço de e-mail abaixo e enviaremos instruções por e-mail para configurar um novo."
+
+#: templates/registration/password_reset_form.html:40
+msgid "Send me instruction"
+msgstr "Envie-me instruções"
+
+#: templates/search.html:6
+msgid "Search results for"
+msgstr "Resultados da busca por"
+
+#: templates/search.html:14
+msgid "Not results found!"
+msgstr "Não foram encontrados resultados!"
+
+#: templates/search.html:16
+msgid "Found "
+msgstr "Encontrado"
+
+#: templates/search.html:16
+msgid " results."
+msgstr "resultados."
