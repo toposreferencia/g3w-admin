@@ -143,7 +143,10 @@ msgid ""
 "({authentication_id}). Ask an administrator to check if the configuration is "
 "correct by browinsg the URL<a target=_new href=\"{admin_url}\">{admin_url}</"
 "a>"
-msgstr ""Aviso: uma camada inválida está usando uma configuração de autenticação existente "({authentication_id}). Peça a um administrador para verificar se a configuração está "correta navegando no URL<a target=_new href=\"{admin_url}\">{admin_url}</"a>""
+msgstr ""
+"Aviso: uma camada inválida está usando uma configuração de autenticação existente "
+"({authentication_id}). Peça a um administrador para verificar se a configuração está "
+"correta navegando no URL<a target=_new href=\"{admin_url}\">{admin_url}</a>"
 
 #: qdjango/forms/projects.py:205
 msgid "Qgis Project"
