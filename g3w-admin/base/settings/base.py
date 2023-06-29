@@ -206,7 +206,7 @@ LANGUAGES = (
     # ('ro', 'Romanian'),
     # ('de', 'Deutsch'),
 )
-STATIC_ROOT = 'static'
+
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
 # if prefix for default language put in to url
