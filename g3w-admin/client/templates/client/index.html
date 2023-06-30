@@ -33,6 +33,16 @@
   <script src="{% with client_default|add:"/js/app.min.js" as app_js %}{% static app_js %}{% endwith %}"></script>
   {% if SETTINGS.G3WSUITE_CUSTOM_STATIC_URL %}{% for js in SETTINGS.G3WSUITE_CUSTOM_JS %}
   <script src="{{ js }}"></script>
+  <script>
+
+  document.addEventListener("DOMContentLoaded", function(event) {
+    let element = document.querySelector('a[data-target="#credits"]')
+    if(element){
+        element.remove()
+    }
+
+  });
+  </script>
   {% endfor %}{% endif %}
 </body>
 </html>
