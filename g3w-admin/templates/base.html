@@ -294,6 +294,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <script src="{% static "bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker."|add:l.0|add:".min.js" %}"></script>
       {% endif %}
     {% endfor %}
+  <script src="{% static "bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ro.min.js" %}"></script>  {#  adicionado para não quebrar alguns componentes, pois ao remover o IDIOMA ROmeno quebrou#}
+
     <!-- AdminLTE App -->
     <script src="{% static "adminlte/js/app.min.js" %}"></script>
     <!-- Django-file-form -->
