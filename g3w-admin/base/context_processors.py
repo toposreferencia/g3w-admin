@@ -20,7 +20,7 @@ def global_settings(request):
     # add anonymous user istance
     g3wadmin_context['anonymous_user'] = get_anonymous_user()
 
-    skin = get_adminlte_skin_by_user(request.user)
+    skin = False
     g3wadmin_context['adminlte_skin'] = 'skin-{}'.format(skin if skin else settings.ADMINLTE_SKIN_DEFAULT)
 
     g3wadmin_context['adminlte_layout_option'] = settings.ADMINLTE_LAYOUT_OPTION

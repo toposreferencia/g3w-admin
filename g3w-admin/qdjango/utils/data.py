@@ -23,7 +23,7 @@ from qgis.core import (
     QgsMapLayerType,
     QgsUnitTypes,
     QgsLayoutItemLabel,
-    QgsMeshLayerTemporalProperties,
+    # QgsMeshLayerTemporalProperties,
     Qgis
 )
 
@@ -720,7 +720,7 @@ class QgisProjectLayer(XmlData):
             #         'end': str(tp.fixedTemporalRange().end().toPyDateTime())
             #     }
 
-            if isinstance(tp, QgsMeshLayerTemporalProperties):
+            if isinstance(tp, 'QgsMeshLayerTemporalProperties'):
                 toret = {
                     'mode': 'MeshTemporalRangeFromDataProvider',
                     'range': [

@@ -34,15 +34,5 @@
   {% if SETTINGS.G3WSUITE_CUSTOM_STATIC_URL %}{% for js in SETTINGS.G3WSUITE_CUSTOM_JS %}
   <script src="{{ js }}"></script>
   {% endfor %}{% endif %}
-<script>
-
-  document.addEventListener("DOMContentLoaded", function(event) {
-    let element = document.querySelector('a[data-target="#credits"]')
-    if(element){
-        element.remove()
-    }
-
-  });
-  </script>
 </body>
 </html>
